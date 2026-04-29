@@ -1,0 +1,73 @@
+{
+	"servers": {
+		"postgres": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-postgres",
+				"postgresql://localhost/mydb"
+			],
+			"type": "stdio"
+		},
+		"my-mcp-server-6455873d": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-filesystem",
+				"C:\\Users\\CAMILO\\Documents\\taxiaeropuerto_project\\TaxiAir"
+			]
+		},
+		"my-mcp-server-2e7903c6": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-fetch"
+			]
+		},
+		// "my-mcp-server-9cdc9590": {
+		//     "type": "stdio",
+		//     "command": "npx",
+		//     "args": [
+		//         "-y",
+		//         "@modelcontextprotocol/server-shell"
+		//     ]
+		// },
+		"my-mcp-server-e3e4a344": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-git"
+			]
+		},
+		"my-mcp-server-e3d5ea28": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"en",
+				"esta",
+				"npx",
+				"-y",
+				"@modelcontextprotocol/server-postgres",
+				"postgresql://postgres:Admin1234*@localhost:5432/taxiair_db",
+				"hay",
+				"que",
+				"poner",
+				"el",
+				"usuario",
+				"y",
+				"el",
+				"password?"
+			]
+		}
+	},
+	"inputs": [
+		{
+			"id": "filesystemPath2",
+			"type": "promptString",
+			"description": "Enter the second allowed directory path"
+		}
+	]
+}
